@@ -1,0 +1,92 @@
+*{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+
+p{
+  pointer-events: none;
+  font-size: 1.5rem;
+}
+
+body{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  overflow: hidden;
+  font-family: 'VT323', monospace;
+}
+
+#drum-machine{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: auto;
+  height: auto;
+  padding:  0 2rem;
+  background-color: rgb(211, 211, 211);
+  border: rgb(118, 118, 118)solid 0.2rem ;
+  flex-wrap: wrap;
+}
+#drum{
+  flex:2;
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  gap: 0.5rem;
+  justify-items: center;
+  align-items: center;
+  padding: 2rem;
+}
+
+.control{
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  margin: 0 2rem ;
+  padding-bottom: 2rem;
+}
+
+.drum-pad{
+  background-color: rgb(186, 186, 186);
+  border-radius: 1rem;
+  padding: 2rem;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 2px 5px 2px rgba(62, 62, 62, 0.639);
+  color: black;
+}
+
+.volume{
+  margin: 2rem 0;
+  -webkit-appearance: none;
+  appearance: none;
+  background-color: rgb(176, 176, 176);
+  box-shadow: 1px 3px 2px rgb(155, 155, 155);
+  width: 100%;
+  height: 2px;
+}
+.volume::-webkit-slider-thumb{
+  -webkit-appearance: none;
+  appearance: none;
+  background-color: rgb(66, 66, 66);
+  width: 10px;
+  height: 25px;
+  cursor: pointer;
+  border: none;
+}
+
+.control h1{
+  background-color: rgb(180, 180, 180);
+  padding: 2rem;
+  border-radius: 5%;
+}
+
+.orange{
+  background-color: rgb(235, 168, 0);
+  box-shadow: none;
+}
